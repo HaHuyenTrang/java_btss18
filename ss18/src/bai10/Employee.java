@@ -1,13 +1,13 @@
 package bai10;
 
 class Employee {
-    private static int idCounter = 1;
+    private static int idCount = 1;
     private int id;
     private String name;
     private double salary;
 
     public Employee(String name, double salary) {
-        this.id = idCounter++;
+        this.id = idCount++;
         this.name = name;
         this.salary = salary;
     }

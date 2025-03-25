@@ -28,6 +28,15 @@ public class bai7 {
 
         }
 
+        List<Map.Entry<Integer, Integer>> list = new ArrayList<>(count.entrySet());
+        Collections.sort(list,new Comparator<Map.Entry<Integer, Integer>>() {
+
+            @Override
+            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
+                return o1.getValue().compareTo(o2.getValue());
+            }
+        });
+
         System.out.println("\nCác phần tử sắp xếp theo số lần xuất hiện tăng dần:"+count);
 
     }
